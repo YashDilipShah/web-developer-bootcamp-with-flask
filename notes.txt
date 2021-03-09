@@ -39,3 +39,14 @@ JavaScript
     JS is a full fledged programming language, that most browsers understand. 
     That makes it unique, because of that, it can be used for many complex
     applications. 
+
+Inspector Tool
+    We use many different tools while developing, but one of the most common
+    tool is the Inspector Tool that comes with almost all the browsers nowadays. 
+
+    We can add or delete elements in the site using the Inspector, and also
+    view the performance related stats. 
+
+    It is important to note that, whatever changes we make in Inspector, are 
+    limited to our browser. If we reload the website, it will remove all the 
+    changes that we have made. 
