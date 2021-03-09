@@ -1,2 +1,41 @@
 This is the file in which I am put all the important notes that are general in
 for this course. 
+
+Website Basics: 
+    1. First and foremost step is conversion of url into a IP address using
+    a DNS. For example, google.com can be mapped to 190.142.5.136 or similar. 
+
+    2. For frequently visited sites, most OS and routers maintains a local
+    cache of such name resolutions. 
+
+    3. Once the name is resolved, the browser sends an HTTP request to the 
+    server with all the relevant information. The server, in turn returns the
+    most appropriate page, or error code. 
+    404 and 200 are common error codes, meaning the required resource doesn't 
+    exist and that request is successful but no resource is present respectively. 
+
+FrontEnd VS BackEnd 
+    1. FrontEnd means all the content that the user interacts with and sees on 
+    his browser windows. This is sometimes also called the client side code. 
+
+    All the HTML files, CSS files, images etc are contained in the FrontEnd. 
+
+    Browser compatibility is an important part of FrontEnd Development, as 
+    different browsers may interpret code differently. 
+
+    2. BackEnd is the other side of the coin. Whenever user does something 
+    that issues a request to the server, then that thing can be called a part 
+    of BackEnd. 
+
+HTML
+    HTML is a markup language, that is used to describe the structure of the 
+    website. 
+
+CSS 
+    CSS is for describing the look of the webpage. It decides how to page will 
+    look to the user. 
+
+JavaScript 
+    JS is a full fledged programming language, that most browsers understand. 
+    That makes it unique, because of that, it can be used for many complex
+    applications. 
