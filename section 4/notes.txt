@@ -1,0 +1,15 @@
+1.      HTML document is made up of elements, that describe that page's content 
+and structure. It may contain images, videos, buttons, etc. 
+
+2.      We write all the information between elements and tags. HTML tags are 
+of different types and different tags have different properties. 
+
+3.      For some complex structure, we may have to nest multiple tags together. 
+One of the most tag is <p>. or the paragraph tag. It is permitted to have content 
+inside it. 
+<p> This is an example of paragraph </p> 
+
+4.      Some HTML tags also accept attributes while opening them and this allow 
+us to specify some properties of that tag 
+<input type="number", required  />
+
