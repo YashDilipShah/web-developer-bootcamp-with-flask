@@ -13,3 +13,9 @@ inside it.
 us to specify some properties of that tag 
 <input type="number", required  />
 
+5.      Now that we have the index.html ready, to change the default style of
+the page, we need to use CSS. Let's have a look at that. 
+
+6.      CSS is made of selectors and properties. Selectors select what aspect
+to modify, and properties are the properties that we want to change in the 
+file. 
