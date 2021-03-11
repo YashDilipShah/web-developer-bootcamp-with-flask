@@ -74,3 +74,75 @@ file.
             alt = "A cute fluffy kitten."
         />
 
+8. Something about the container elemnents:
+This elements are designed to contain more elements inside them. Let us look at
+them. 
+
+    >section
+        ~ Contains thematically related elements. 
+        ~ The section element is a part of the whole and used to divide the 
+        page into multiple parts. 
+        ~ Generally sections contain a heading. 
+
+        <body>
+            <section>
+                <!-- Merch Items -->
+            </section>
+            <section>
+                <!-- Blogs -->
+            </section>
+        </body>
+
+    >article 
+        ~ Self contained composition (makes sense on its own)
+
+        <article class = "forcast">
+            <h1>Weather forecast for Seattle</h1>
+            <article class= "day-forecast">
+                <h2>03 March 2018</h2>
+                <p>Rain.</p>
+            </article>
+            <article class = "day-forecast">
+                <h2> 04 March 2018</h2>
+                <p>Periods of rain. </p>
+            </article>
+            <article class="day-forecast">
+                <h2>05 March 2018</h2>
+                <p>Heavy rain. </p>
+            </article>
+        </article>
+
+    >div
+        ~Very generic, so useful for grouping
+        ~Mainly used to aid in styling content. 
+        ~They are somewhat similar to span, and thus, should be used sparingly. 
+
+    >header
+        ~ For introductory content
+        ~ Header bars with logo and navigation. 
+        ~ You can use header inside section and article, to put the title and 
+        other information. 
+
+    >nav 
+        ~ Major navigation blocks in the site. 
+        ~ Often inside the header when it is used as a header bar. 
+        ~ This is most commonly used when you have a group of links that 
+        you want to use as navigators. However, this is not the appropriate 
+        choice, if you want have some reference links to outside pages. 
+
+    >main 
+        ~ The main content of the document or page. (What is unique to 
+        that particular page)
+        ~ Only 1 per page, inside the body. 
+        ~ For backward compatibility, include a role attribute inside it. 
+        
+        <main role = "main"> 
+        </main> 
+
+    >footer 
+        ~ They are there to provide some additional information about the 
+        parent element. This may include social media links, secondary 
+        navigation, site smallprint. 
+        ~ You can use footer inside articles or sections, but they should be
+        related to the parent element! 
+        
