@@ -19,3 +19,58 @@ the page, we need to use CSS. Let's have a look at that.
 6.      CSS is made of selectors and properties. Selectors select what aspect
 to modify, and properties are the properties that we want to change in the 
 file. 
+
+7. Some of the most common HTML elements:
+
+    > span : 
+        ~ Generally used to annotate small pieces of text, because we want to 
+        assign some different style to them. 
+        <span> Text </span>
+        ~ Very generic element, with no semantic meaning. Use it as last
+        resort. 
+        ~ It can be used for multitude of purposes, but it is better to 
+        avoid it as much as possible, for the same reason, because anyone else 
+        reading the code will have no idea what it means. The best thing to do 
+        is to search for a specific HTML element for the purpose and use span
+        only if such doesn't exist. 
+
+    > a : 
+        ~ "Anchors" used for links and one of the most important elements. 
+        <a href="google.com"> Go to Google! </a>
+
+    > li (lists)
+        ~ Lists are used to list some elements in the webpage. The most common
+        lists are ol and ul, that ordered lists or unordered lists. 
+        <ol>
+            <li> element 1 </li>
+            <li> element 2 </li>
+            <li> element 3 </li>
+        </ol>
+
+    > form 
+        ~ Forms are one of the most vital elements, and it is used almost
+        everywhere. 
+        ~ It is so commonly used, that there are a host of elements just 
+        for forms. We will see them in detail as we go on. 
+        ~ The two most important attributes of form are action and method. 
+        action decides where to send the data and method decides the type of 
+        HTTP request, which is generally post, or even get in some cases. 
+
+        <form action="/login" method='post'>
+
+            content
+
+        </form> 
+
+    > img 
+        ~One of the several elements used to display images. 
+        ~ It doesn't have a closing tag, and only have one required attribute, 
+        src which specifies the path, or the URL of the image. 
+        ~ But it is generally advisable to have alt attribute, providing 
+        some information regarding the image. 
+
+        <img
+            src = "https://placekitten.com/200/300"
+            alt = "A cute fluffy kitten."
+        />
+
