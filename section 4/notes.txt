@@ -148,25 +148,25 @@ them.
 
 
 9. What is semantic HTML? 
-    i. What are we trying to describe? 
-            HTML is used to describe the meaning of the page's content. 
-            In other words: the role of a block of content in the context of the
-            whole document. 
-            HTML is not for describing what a looks like - like colors, sizes, 
-            shadows etc.. 
+    What are we trying to describe? 
+        HTML is used to describe the meaning of the page's content. 
+        In other words: the role of a block of content in the context of the
+        whole document. 
+        HTML is not for describing what a looks like - like colors, sizes, 
+        shadows etc.. 
 
-            Although, even if we don't provide any css, all elements look different
-            and that's because browser applies some default styling to every 
-            element.
+        Although, even if we don't provide any css, all elements look different
+        and that's because browser applies some default styling to every 
+        element.
 
-            There are some specifiers in HTML for basic styling, like <b> for 
-            bolding the text, but you should avoid using HTML for visual 
-            effect. 
+        There are some specifiers in HTML for basic styling, like <b> for 
+        bolding the text, but you should avoid using HTML for visual 
+        effect. 
 
-    ii. Who are we descri the content for? 
-            HTML is for computers to read. 
-            Computers turn the HTML into things the user sees!
-            HTML is also vital for things like screen readers, where good markup
-            can make navigation much easier. 
+    Who are we describing the content for? 
+        HTML is for computers to read. 
+        Computers turn the HTML into things the user sees!
+        HTML is also vital for things like screen readers, where good markup
+        can make navigation much easier. 
 
     Thus, USE HTML TO DESCRIBE THE CONTENT and USE CSS FOR STYLING. 
