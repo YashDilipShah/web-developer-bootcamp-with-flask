@@ -46,3 +46,62 @@ What is HSL?
 Working with color opacity
     - RGB and HSL can make use of alpha channel, which represents opacity. 
     - rgba(128, 0, 128, 50%) is 50% transparent purple
+
+
+What is box model? 
+    - It determines the overall size and shape of an element on the page. 
+    - Made up of : content area, padding , border, and margin. 
+    - Can be viewed in the inspector. 
+    - So if we want the element to have final width of 300px, we need to to:
+        Final width = width - vertical borders - vertical borders
+        Final height = height = horizontal borders - horizontal borders
+
+    - This can be really fiddly, so that's why the alternative box model exists. 
+    - The size of element in alternative is calculated as 
+        content size + padding + border 
+    - Margin still calculated separately, since it separates elements  from 
+    each other. 
+    - Using alternative box model for all the elements is recommended. 
+
+    For one element: 
+    .element {
+        box-sizing: border-box;
+    }
+
+    For all elements: 
+    *, 
+    *::before, 
+    *::after {
+        box-sizing: inherit;
+    }
+    body {
+        box-sizing: border-box;
+    }
+
+    - Everything we've talked about applies only to elements being displayed as
+    blocks. 
+    - For inline elements, 
+        ~ We can't set explicit width and height, these are set by the content. 
+        ~ We can't create spave above and below them with padding, margin, 
+        or borders. (left and right still works though)
+
+CSS Units
+    - Pixels
+        ~ In terms of hardware, a pixel is light-emitting unit capable of 
+        displaying full colour independently of its neighbours. 
+        ~ In CSS, there a degree of scaling so that high pixel density displays
+        still display objects at an appropriate size. 
+    - Percentages 
+        ~ Generally used for values relative to a parent. 
+        width 50% means 50% of parent's width. 
+        ~ Other times, percentages can be relative to the element itself. 
+        ~ Or used in more absolute terms, such as for colours. 
+
+    - em 
+        ~ em is defined as being the same as the point size of the font. 
+        ~ So if font-size is 16px, then 2em is 32px. 
+
+    - rem 
+        ~ rem stand for root em
+        ~ It's generally more useful, since it's more consistent. 
+        ~ It used the global font size to determince it's size. 
