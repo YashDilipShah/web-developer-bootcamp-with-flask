@@ -1,0 +1,48 @@
+In CSS, some selectors take precedence over other selectors. For example, 
+for a sentence havning both an ID and a class, the styling of the ID is 
+applied over the class. 
+
+Also, there is also inheritance in CSS. To eleborate, if there is an element 
+inside other element, and if no particular style is applied to the inside 
+element, then that particular instance of inner element will have the
+styling properties of the parent element. 
+
+How colours work? 
+    - CSS comes with dozens of predefined colors. However, we can also define 
+    our own colors. 
+    - Some color names are aliases for other colors, such as grey and gray. 
+
+What is RGB? 
+    - An additive colour model that uses Red, Green, and Blue. 
+    White is rgb(255, 255, 255)
+    Black is rgb(0, 0, 0)
+    Purple is rgb(128, 0, 128)
+    - The range of RGB colors range from 0 to 255 inclusive. 
+
+What is hexadecimal? 
+    - Our common number system with base 16. 
+    - ff is 255 for example. 
+    - CSS colours can be represented as three pairs of hexadecimal, such as 
+    #ff00ff meaning rgb(255, 0, 255)
+    - So we can use a single hexadecimal number instead of three decimal 
+    numbers, which is more succinct. 
+
+What is HSL? 
+    - Stands for Hue, Saturation, and Lightness. 
+    - It uses a cylindrical model to represent the colour space. 
+    - The Hue is represented by an angle between 0 and 360. 
+    - Saturation indicates how vibrant our color should be. 0 means we are
+    at the centre of cylinder, and the colour is white and max means we have 
+    max saturation. Represented in percentage. 
+    - Lightness indicates the third dimension, where 100% gives us white, 
+    and 0% gives us black. 
+
+    Reference picture : https://commons.wikimedia.org/wiki/File:HSL_color_solid_cylinder.png 
+
+    At a lightness of 50% and Saturation of 100%, we get the most saturated 
+    version of given Hue. 
+    - Purple in HSL is hsl(300, 100%, 25%)
+
+Working with color opacity
+    - RGB and HSL can make use of alpha channel, which represents opacity. 
+    - rgba(128, 0, 128, 50%) is 50% transparent purple
