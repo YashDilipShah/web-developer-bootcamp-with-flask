@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors</title>
+    <title>BEM example</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>CSS Selector Playground</h1>
-    <p>
-        I'm a plain old text. 
-    </p>
-    <p class="red">
-        I have a class red. 
-    </p>
-    <p id = "blue">
-        I have an ID. 
-    </p>
-    <p class="red" id = "purple">
-        I'm super fancy, I have a class <em>and</em> an ID. 
-    </p>
+    <form class="form" method="POST">
+        <p class="form__group">
+            <label class="form__label" for="name">Name: </label>
+            <input class="input" type="text" name="Name" id="name" />
+
+        </p>
+        <p class="form__group">
+            <label class="form__label" for="email">Email: </label>
+            <input class="input" type="email" name="email" id="email" />
+        </p>
+        <p class="form__group">
+            <label class="form__label" for="password">Password: </label>
+            <input class="input" type="password" name="password" id="password" />
+        </p>
+
+        <button class="button" type="submit">Sign Up</button>
+    </form>
 </body>
 </html>

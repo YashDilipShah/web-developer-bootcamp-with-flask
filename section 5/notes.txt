@@ -122,3 +122,12 @@ What is specificity?
 BEM 
     - What is BEM? 
         ~ A CSS methodology and a naming scheme. 
+        ~ Uses classes almost exclusively (no other selectors)
+            This helps with specificity. 
+        ~BEM stands for Block Element Modifier. 
+            where block is a meaningful, standalone entities like menu, header, 
+            form etc. 
+            elements are a part of block and its meaning is tied to the block. 
+            written using the block class and double underscore. 
+            menu__item, form__field etc. 
+            
