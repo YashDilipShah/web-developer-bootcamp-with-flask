@@ -105,3 +105,20 @@ CSS Units
         ~ rem stand for root em
         ~ It's generally more useful, since it's more consistent. 
         ~ It used the global font size to determince it's size. 
+
+What is specificity? 
+    - A mechanism used by browser to determine which property declarations are
+    applied. 
+    - The selectors of a property determine the specificity weight. 
+    - The property with highest weight, wins and is applied to the element. 
+    - If there's a tie, the order matters (latest wins)
+
+    - The weighting system: 
+        ~ Different types of selector contribute differently to overall 
+        specificity. 
+        ~ A selector with higher weight beats any number of selectors with 
+        a lower weight. 
+
+BEM 
+    - What is BEM? 
+        ~ A CSS methodology and a naming scheme. 
