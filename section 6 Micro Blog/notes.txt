@@ -1,0 +1,6 @@
+The 5 prime steps in software development: 
+    - Become a User (or have one in team)
+    - Populate the Backlog with help from the user. 
+    - Make the working software. 
+    - Review and Change the plan according to need and suggestions. 
+    - Improve your process. 
