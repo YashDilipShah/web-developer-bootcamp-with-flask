@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroBlog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header class="navbar">
         <div class="navbar__brand">
-            <img src="microblog-logo.svg" alt="The MicroBlog Logo" />MicroBlog
+            <img class="navbar__logo" src="microblog-logo.svg" alt="The MicroBlog Logo" />MicroBlog
         </div>
         <ul class="navbar__navigation">
             <li class="navbar__navigation-item"><a href="#" class="navbar__link">Recent</a></li>
             <li class="navbar__navigation-item"><a href="#" class="navbar__link">Calendar</a></li>
         </ul>
     </header>
-    <main>
+    <main class="main">
         <section>
             <h1>Add new field</h1>
             <form class='form' action="/entry" method="POST">
@@ -29,12 +29,12 @@
         </section>
         <section>
             <h1>Recent Posts</h1>
-            <article>
+            <article class="entry">
                 <div>
-                    <h2>A bit of a chill day today</h2>
-                    <time datetime="24-10-2019">Oct 24</time>
+                    <h2 class="entry__title">A bit of a chill day today</h2>
+                    <time class="entry__date" datetime="24-10-2019">• Oct 24</time>
                 </div>
-                <p>
+                <p class="entry__content">
                     Today I couldn't do much programming, but that's OK! Can't 
                     be too awesome every day now!
                 </p> 
