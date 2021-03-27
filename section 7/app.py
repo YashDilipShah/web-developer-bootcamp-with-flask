@@ -1,17 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for, redirect
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "This was changed. "
+    return render_template("jinja2.html")
 
-@app.route('/first')
-def first():
-    return render_template("first.html")
-
-@app.route('/second')
-def second():
-    return render_template("second.html")
 
 app.run(debug=True, port=5000)

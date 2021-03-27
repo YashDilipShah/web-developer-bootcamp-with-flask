@@ -1,2 +1,13 @@
 In this section, we are gonna start learning Flask and MongoDB for backend
 development. 
+
+
+What is Jinja2? 
+    Jinja2 provides a way to interpolate string, using placeholders and
+    templates. 
+
+    from jinja2 import Template 
+    template = Template("Hello, {{ name }}")
+    template.render(name="Yash")
+        returns Hello, Yash
+    
