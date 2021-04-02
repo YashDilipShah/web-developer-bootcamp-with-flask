@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h2>
+        This is how loops work in Jinja2
+    </h2>
+    <h3>
+        Printing all planets
+    </h3>
+    {% for i in planets %}
+    <p>
+        {{ i }}
+    </p>
+    {% endfor %}
+
+    <h3>
+        Printing numbers till {{ count }}
+    </h3>
+    {% for i in range(count) %}
+    <p>
+        {{i}}
+    </p>
+    {%endfor%}
+
+    <h3>
+        Demonstrating both loops and conditionals
+    </h3>
+    {%for i in range(count2)%}
+    {% if i % 2 == 0%}
+    <p>
+        Even
+    </p>
+    {%else%}
+    <p>
+        Odd
+    </p>
+    {%endif%}
+    {%endfor%}
+
+
+    <h3>
+        Messing around
+    </h3>
+    {%for i in range(count3)%}
+        {%for i in range(count3)%}
+            {%for i in range(count3)%}
+                <p>
+                    {{ i }}
+                </p>
+            {%endfor%}
+        {%endfor%}
+    {%endfor%}
+</body>
+</html>
