@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals</title>
+</head>
+<body>
+    <h1>
+        Conditionals in Jinja2
+    </h1>
+    <h2>
+        Basic Comparisons
+    </h2>
+
+    {% if company == "Apple" %}
+    <h3>
+        Avaiable Apple Products
+    </h3>
+    <ul>
+        <li>iPhone</li>
+        <li>iPad</li>
+        <li>iMac</li>
+    </ul>
+    {% elif company == "Microsoft" %}
+    <h3>
+        Avaiable Microsoft Products
+    </h3>
+    <ul>
+        <li>Windows Phone</li>
+        <li>Surface Pro</li>
+        <li>Surface book</li>
+    </ul>
+
+    {% else %}
+    <h3>
+        You have selected wrong company 
+    </h3>
+
+    {% endif %}
+</body>
+</html>
