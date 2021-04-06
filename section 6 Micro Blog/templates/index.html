@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroBlog</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="../static/css/style.css"/>
 </head>
 <body>
     <header class="navbar">
         <div class="navbar__brand">
-            <img class="navbar__logo" src="microblog-logo.svg" alt="The MicroBlog Logo" />MicroBlog
+            <img class="navbar__logo" src="../static/microblog-logo.svg" alt="The MicroBlog Logo" />MicroBlog
         </div>
         <ul class="navbar__navigation">
             <li class="navbar__navigation-item"><a href="#" class="navbar__link">Recent</a></li>
@@ -22,7 +22,7 @@
             <form class='form' action="/entry" method="POST">
                 <p class='form__input'>
                     <label for="entry" class="form__label">Entry Contents: </label>
-                    <textarea name="content" id='entry' class="form__textarea">Enter your content</textarea>
+                    <textarea name="content" id='entry' class="form__textarea"></textarea>
                 </p>
                 <button type="submit" class='form__submit'>Add Entry</button>
             </form>
