@@ -64,3 +64,12 @@ Drawbacks of MongoDB
     high memory usage. 
     - There are limits to the size of documents and amount of nesting within
     documents. 
+
+For the limited work, that we are going to do in this course, we are not going
+to install MongoDB, but we will use there cloud service, Atlas. It is not very 
+powerful, but plenty for our use. 
+
+If in future you are in need of more powerful performance, you can always
+download MongoDB in your local machine. To access Atlas, go to 
+https://mongodb.com 
+
