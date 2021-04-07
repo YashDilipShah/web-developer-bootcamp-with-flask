@@ -7,3 +7,60 @@ The 5 prime steps in software development:
 
 For backlog management, https://trello.com is great site. 
 
+The usual databases, or SQL databases, there are tables, and all the data is 
+stored in tables. These tables are linked together by primary and 
+foreign keys. 
+
+To extract data from traditional databases, SQL is used, and the relationships
+between data is used to specify which data to extract. 
+
+As opposed to traditional SQL, NoSQL databases are different. MongoDB which 
+we will be using in this course, is also a NoSQL database. For these databases, 
+each different database comes with its own method for querying the data. 
+
+Databases using varying ways of storing data to provide a variety of benefits.
+
+MongoDB doesn't use tables with columns, but instead it uses collections with 
+documents. The key difference being, in tables, each row is of same type, 
+for example, if there are 10 columns, then you will know that all the rows 
+will have 10 entries. But that is not the case with MongoDB. 
+
+In MongoDB, each document in the collections can be different and can contain 
+different data. It is not bounded or restricted by anything such as the case 
+in SQL databases. 
+
+So, what does a document in MongoDB look like? 
+    - It looks something like 
+        {
+            _id : ObjectId("172384"), 
+            username : "Yash", 
+            contact : {
+                phone : "12345678890", 
+                email : "something@somethingelse.com"
+            }, 
+            access : {
+                level : 5, 
+                group : "dev"
+            }
+        }
+    
+    - It is basically like JSON or somewhat similar to Python dictionary. 
+    - The _id field is an required MongoDB field, which is required to identify
+    the document.  
+    - The document may contain sub documents, which is the case in the field
+    contact in above example. 
+
+Benefits of MongoDB
+    - More flexibility since there is no fixed schema. 
+    - This can lead to faster development times. 
+    - Data storage is similar to python dictionary, so it lends itself
+    well since less code is needed for mapping data. 
+    - MongoDB's scalability model is straightforward. 
+
+Drawbacks of MongoDB
+    - No native JOINs. You can join manually with python code, but performance
+    is much worse than native SQL joins. 
+    - Storing the key name for each field in every document results in 
+    high memory usage. 
+    - There are limits to the size of documents and amount of nesting within
+    documents. 
