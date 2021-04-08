@@ -73,3 +73,12 @@ If in future you are in need of more powerful performance, you can always
 download MongoDB in your local machine. To access Atlas, go to 
 https://mongodb.com 
 
+You shouldn't really create a database connection in the app.py file. For that
+you can use the Flask app factory pattern. 
+
+The reason why shouldn't do that, is because when in deployment, the app file 
+may have to be restarted some times. By having the connection in that file, 
+you establish a new connection everytime the file is restarted. 
+
+To solve this app, it is as simple as putting the whole app, inside create_app
+function, which returns the app. 
