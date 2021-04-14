@@ -106,3 +106,15 @@ venv.
 
 If you are using conda, you can easily make the requirements.txt file using 
 conda list --export > requirements.txt 
+or, if you want a pip compatible requirements.txt, you can run 
+pip freeze > requirements.txt 
+from within the conda env. 
+
+Then, we also need to specify the language and the version in which our app 
+is written. For our case, it is Python 3.7.6
+This information goes in the file called runtime.txt 
+
+Moreover, we will need to tell Heroku, how to run our app, we generally run our
+app using app.run() but Heroku needs another library all together to do it. 
+We also have to tell Heroku how to run the code. For this, we need a Procfile. 
+

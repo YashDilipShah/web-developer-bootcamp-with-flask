@@ -22,5 +22,5 @@ def create_app():
     return app 
 
 
-app = create_app()
-app.run(port=5000)
+#app = create_app()
+#app.run(port=5000)
