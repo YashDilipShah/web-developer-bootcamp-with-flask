@@ -1,0 +1,13 @@
+In this section, we will deploy our app on Heroku, so whole world can 
+use it. 
+
+The first thing we need to do, is tell Heroku, what dependencies our app uses. 
+These includes all the modules and packages that are needed. 
+
+For that, we create a file calles requirements.txt, and write all the dependencies
+in it. You don't have to put all the dependencies, rather, you just want 
+to write the dependencies that you are using, or manually installed in the 
+venv. 
+
+If you are using conda, you can easily make the requirements.txt file using 
+conda list --export > requirements.txt 
